@@ -6,7 +6,7 @@ gem 'pry-rails', :group => :development
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'omniauth-facebook'
-
+gem 'pg'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
