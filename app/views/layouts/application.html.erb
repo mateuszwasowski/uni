@@ -27,13 +27,14 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 </script>
+ <img src = "http://graph.facebook.com/1144000365632831/picture?type=large"></img>
 <% if current_user %>
 <br>
 AKTUALNIE ZALOGOWANY JAKO:
 <br>
 <p>EMAIL: <%= current_user.email %></p>
 <p>IMIĘ: <%= current_user.name %></p>
-<p>ZDJĘCIE DUŻE: <%= image_tag(current_user.largeimage)%></p>
+<p>ZDJĘCIE DUŻE: <%= image_tag(current_user.largeimage)%> STRING: <%=current_user.largeimage%></p>
 <br>
 <p>ZDJĘCIE MAŁE: <%= image_tag(current_user.normalimage)%></p>
 <% end %>

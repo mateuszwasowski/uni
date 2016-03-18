@@ -20,4 +20,8 @@ class User < ActiveRecord::Base
    def normalimage
      "http://graph.facebook.com/#{self.uid}/picture?type=normal"
   end
+
+  def smallimage
+    "http://graph.facebook.com/#{self.uid}/picture?type=small"
+  end
 end
