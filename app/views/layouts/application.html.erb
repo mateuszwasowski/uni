@@ -30,9 +30,9 @@ window.fbAsyncInit = function() {
 
 <% if current_user %>
 AKTUALNIE ZALOGWANY JAKO:
-<p>EMAIL: <%= current.user.email %></p>
-<p>IMIĘ: <%= current.user.name %></p>
-<p>ZDJĘCIE: <%#= image_tag current.user.image %></p>
+<p>EMAIL: <%= current_user.email %></p>
+<p>IMIĘ: <%= current_user.name %></p>
+<p>ZDJĘCIE: <%= image_tag current_user.image %></p>
 <% end %>
 
 <%= yield %>
