@@ -68,7 +68,7 @@ Devise.setup do |config|
 
   # The realm used in Http Basic Authentication. 'Application' by default.
   # config.http_authentication_realm = 'Application'
-  config.omniauth :facebook,'239282999749784','ffb619506ff423e087aecdb5b1712a97'
+  config.omniauth :facebook,'239282999749784','ffb619506ff423e087aecdb5b1712a97', :image_size => "normal", :secure_image_url => true
   # It will change confirmation, password recovery and other workflows
   # to behave the same regardless if the e-mail provided was right or wrong.
   # Does not affect registerable.
