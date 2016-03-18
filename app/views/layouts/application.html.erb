@@ -28,15 +28,14 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 </script>
 <% if current_user %>
-<%= image_tag(current_user.image.gsub(/\s+/, ""))%> STRING: <%=current_user.image%>
 <br>
 AKTUALNIE ZALOGOWANY JAKO:
 <br>
 <p>EMAIL: <%= current_user.email %></p>
 <p>IMIĘ: <%= current_user.name %></p>
-<p>ZDJĘCIE DUŻE: <%= image_tag(current_user.largeimage.gsub(/\s+/, ""))%> STRING: <%=current_user.largeimage%></p>
+<p>ZDJĘCIE DUŻE: <%= image_tag(current_user.largeimage)%> STRING: <%=current_user.largeimage%></p>
 <br>
-<p>ZDJĘCIE MAŁE: <%= image_tag(current_user.normalimage.gsub(/\s+/, ""))%></p>
+<p>ZDJĘCIE MAŁE: <%= image_tag(current_user.normalimage)%></p>
 <% end %>
 
 <%= yield %>
