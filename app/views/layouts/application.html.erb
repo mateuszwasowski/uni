@@ -27,12 +27,15 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 </script>
-
 <% if current_user %>
-AKTUALNIE ZALOGWANY JAKO:
+<br>
+AKTUALNIE ZALOGOWANY JAKO:
+<br>
 <p>EMAIL: <%= current_user.email %></p>
 <p>IMIĘ: <%= current_user.name %></p>
-<p>ZDJĘCIE: <%= image_tag current_user.image %></p>
+<p>ZDJĘCIE DUŻE: <%= image_tag(current_user.largeimage)%></p>
+<br>
+<p>ZDJĘCIE MAŁE: <%= image_tag(current_user.normalimage)%></p>
 <% end %>
 
 <%= yield %>
