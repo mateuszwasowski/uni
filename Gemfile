@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 #addded gems
 gem 'pry-rails', :group => :development
 gem 'activeadmin', github: 'activeadmin'
-
+gem 'devise'
+gem 'omniauth-facebook'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

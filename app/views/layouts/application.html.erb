@@ -2,11 +2,38 @@
 <html>
 <head>
   <title>Uni</title>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '239282999749784',
+    xfbml      : true,
+    version    : 'v2.5'
+  });
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 
 <%= yield %>
 
