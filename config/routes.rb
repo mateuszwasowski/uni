@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root to: 'home#index'
-  resources :home, only: [:index] do
-
-  end
+  get '/', to: "home#index", as: :index
   get 'login', to: "home#login", as: :login
+  get 'home', to: "home#home", as: :home
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
