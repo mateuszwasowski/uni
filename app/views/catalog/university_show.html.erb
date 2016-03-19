@@ -10,7 +10,7 @@
 
                   <% @uni.catalogs.where(special:true).order(:name).each do |cat| %>
 
-                    <%= link_to uni_show_path(cat.id) ,style:"border:0;" do%>
+                    <%= link_to speciality_path(cat.id) ,style:"border:0;" do%>
                       <div class="col-lg-2 box-file">
                           <div class="file">
                               <div class="row folder-icon">
