@@ -1,3 +1,3 @@
 ActiveAdmin.register Catalog do
-  permit_params :name, :user_id, :univerity_id
+  permit_params :name, :user_id, :university_id
 end
