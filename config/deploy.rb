@@ -1,6 +1,4 @@
 # Change these
-server '164.132.199.135', port: 80, roles: [:web, :app, :db], primary: true
-
 set :application,     'uni'
 set :scm, :git
 set :repo_url, 'git@github.com:mateuszwasowski/uni.git'
