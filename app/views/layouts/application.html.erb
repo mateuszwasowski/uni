@@ -14,7 +14,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 </head>
+<% if current_page?(root_path) %>
+<body style="background-color: #4499ef !important;background: url(<%=image_path("background.jpg")=%>) no-repeat center center fixed;">
+<% else %>
 <body>
+<% end %>
 <script>
 window.fbAsyncInit = function() {
   FB.init({
