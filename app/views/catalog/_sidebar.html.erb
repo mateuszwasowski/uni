@@ -4,12 +4,13 @@
     <li>
       <a href="#">
         <span class="fa fa-info" style="font-size:14px; margin-right:10px;"></span>
-        Informacje o projekcie</a>
+        About this project</a>
     </li>
     <li>
-      <a href="#">
+      <%= link_to  home_path do %>
         <span class="fa fa-table" style="font-size:14px; margin-right:10px;"></span>
-        Twoje Katalogi</a>
+        Your Catalog</a>
+      <%end %>
     </li>
     <li><%= link_to  destroy_user_session_path, method: :delete do %>
       <span class="fa fa-remove" style="font-size:14px; margin-right:10px;"></span>
