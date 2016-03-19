@@ -2,7 +2,7 @@
 @import "style.scss";
 
 body {
- 
+
 
    background-position: top;
 }
@@ -19,7 +19,19 @@ body {
 	margin-top: 50px;
   margin-left: -25px;
 }
+a.btn-facebook{
 
+  text-decoration: none;
+  color:white;
+  margin-top:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+
+  font-weight: bold;
+}
+.btn-facebook span.fa{
+line-height: 40px;
+}
 #contentSignIn {
   position: relative;
   vertical-align: top;

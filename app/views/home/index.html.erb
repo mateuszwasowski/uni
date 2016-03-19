@@ -19,11 +19,11 @@
 			</div>
 		</div>
 		<div class="row" id="signInButton">
-			<div class="col-lg-6 col-lg-offset-3 text-center">
+			<div class="col-lg-4 col-lg-offset-4 text-center">
 				<a href="#signIn" role="button" class="biliboard radial" data-toggle="modal">
-					<a class="btn btn-block btn-social btn-facebook">
-				    <span class="fa fa-facebook"></span> Sign in with Twitter
-				  </a>
+					<%= link_to omniauth_authorize_path(:user, :facebook), class: "btn btn-block btn-social btn-facebook" do %>
+					  <span class="fa fa-facebook"></span> Sign in with Facebook
+					<% end %>
 				</a>
 			</div>
 		</div>
