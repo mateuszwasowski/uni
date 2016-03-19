@@ -6,13 +6,15 @@
   </div>
 
 
-<%if current_user %>
-<div class="col-lg-2 col-lg-offset-7 topMargin">
-  <%= current_user.name %>
-</div>
-<div class="col-lg-1">
-  <%= image_tag 'avatar.png', size:50%>
-</div>
-<%end %>
 
+    <%if current_user %>
+    <div style="margin-top:10px;">
+    <div class="col-lg-2 col-lg-offset-8 topMargin" style="text-align:right">
+    <%=current_user.name %>
+    </div>
+    <div class="col-lg-1">
+      <%= image_tag 'avatar.png', width:50, height:50%>
+    </div>
+    <%end %>
+</div>
 </div>
