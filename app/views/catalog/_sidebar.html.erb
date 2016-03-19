@@ -2,14 +2,15 @@
   <ul class="sidebar-nav">
     <a class="sidebar-brand" href="#"><%= image_tag('logo_sidebar.png',id:"logo_sidebar", alt: 'vote')%></a>
     <li>
-      <a href="#">
+      <%= link_to  about_path do %>
         <span class="fa fa-info" style="font-size:14px; margin-right:10px;"></span>
-        About this project</a>
+        About this project
+        <%end %>
     </li>
     <li>
       <%= link_to  home_path do %>
         <span class="fa fa-table" style="font-size:14px; margin-right:10px;"></span>
-        Your Catalog</a>
+        Your Catalog
       <%end %>
     </li>
     <li><%= link_to  destroy_user_session_path, method: :delete do %>

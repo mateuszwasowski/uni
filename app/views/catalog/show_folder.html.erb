@@ -31,7 +31,9 @@
                   <i class="fa fa-file fa-5x folder-ico"></i>
                 </div>
                 <div class="row folder-name" >
-                  <%= link_to "#{cat.name}", cat.file.url ,style:"text-decoration:none"%>
+                  <% if cat.file.url %>
+                  <%= link_to "#{cat.file.url.split('/').last.last(15)}", cat.file.url,style:"text-decoration:none"%>
+                  <%end%>
                 </div>
               </div>
             </div>
@@ -45,12 +47,37 @@
   <br><br>
   <div class="footer">
   <%= form_for @fileshare, url: show_folder_path, method: :post, html: { multipart: true } do |f| %>
-  <div class="col-lg-3">
-   <%= f.file_field :file %>
+  <div class="col-lg-3" id="special_t">
+   <%= f.file_field :file , id: "bba"%>
    <%= f.hidden_field :user_id, value: 1 %>
    <%= f.hidden_field :catalog_id, value: @year.id %>
-   <%= f.submit %>
+   <br>
+   <%= f.submit 'Add new file', class:"btn", id: "send_btn"%>
   </div>
   <% end %>
   </div>
 </div>
+
+<style>
+#bba{
+border-top: 6px solid #e5e5e5;
+padding-top:20px;
+
+}
+#special_t{
+
+padding-top: 300px;
+padding-left: 8%;
+
+}
+#send_btn{
+  padding:10px 30px 10px 30px;
+  border: none;
+  background: #76CB6D !important;
+  text-shadow: none;
+  color:white;
+}
+#send_btn:hover{
+color:whitesmoke;
+}
+</style>

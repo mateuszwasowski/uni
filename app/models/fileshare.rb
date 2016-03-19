@@ -4,7 +4,5 @@ class Fileshare < ActiveRecord::Base
 
   mount_uploader :file, DropFileUploader
 
-  def name
-    self.file.url.split('/').last
-  end
+  
 end

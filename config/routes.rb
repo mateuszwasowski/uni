@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     match 'show_folder/:f_id' => "catalog#create_file", :via => :post
   end
 
+  get '/about', to: "home#about", as: :about
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
