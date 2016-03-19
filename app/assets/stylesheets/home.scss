@@ -1,3 +1,37 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+ background: url(../images/background.jpg) no-repeat center center fixed;
+   background-color: #000000; 
+   background-position: top;
+}
+.container{
+	margin-top: 170px;
+}
+#logo{
+   margin-top: 90px;
+   background-color: white;
+}
+#unipload{
+   margin-top: 45px;
+   background-color: red;
+
+}
+#contentSignIn{
+	margin-top: 50px;
+}
+
+#test{
+	background-color: red;
+}
+
+#contentSignIn{
+	width: 708px !important;
+	height: 100px;
+}
+
+#sendButton{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 408px !important;
+	height: 50px;
+
+}
