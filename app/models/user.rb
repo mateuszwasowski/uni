@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :rememberable, :trackable, :validatable
+  devise :registerable, :rememberable, :trackable, :validatable
   devise :omniauthable, :omniauth_providers => [:facebook]
   mount_uploader :avatar, AvatarUploader
   has_and_belongs_to_many :universities
