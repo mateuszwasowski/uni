@@ -33,14 +33,8 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 </script>
 <% if current_user %>
-<br>
-AKTUALNIE ZALOGOWANY JAKO:
-<br>
-<p>EMAIL: <%= current_user.email %></p>
-<p>IMIĘ: <%= current_user.name %></p>
-<p>ZDJĘCIE DUŻE: <%= image_tag(current_user.largeimage)%> STRING: <%=current_user.largeimage%></p>
-<br>
-<p>ZDJĘCIE MAŁE: <%= image_tag(current_user.normalimage)%></p>
+<%= debug current_user.email %>
+<%= debug current_user.name %>
 <% end %>
 
 <%= yield %>
