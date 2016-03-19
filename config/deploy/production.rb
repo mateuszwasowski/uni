@@ -31,7 +31,10 @@
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
+set :stage, :production
 
+# Replace 127.0.0.1 with your server's IP address!
+server '164.132.199.135', user: 'deploy', roles: %w{web app}
 
 # Custom SSH Options
 # ==================
