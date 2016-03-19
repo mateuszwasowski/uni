@@ -6,11 +6,14 @@ class CatalogController < ApplicationController
    end
 
    def speciality
-     @special = Catalog.find(params[:id])
+     @uni = University.find(params[:id])
+     @special = Catalog.find(params[:s_id])
    end
 
    def show_folder
-     @year = Catalog.find(params[:id])
+     @uni = University.find(params[:id])
+     @special = Catalog.find(params[:s_id])
+     @year = Catalog.find(params[:f_id])
      @fileshare = Fileshare.new()
    end
 
@@ -25,14 +28,6 @@ class CatalogController < ApplicationController
      end
    end
 
-   def download
-     @model = Fileshare.find(params[:id])
-     send_file(@model.file.path,
-        :filename => @model.file,
-        :type => @model.file.content_type,
-        :disposition => 'attachment',
-        :url_based_filename => true)
-   end
 
    private
 

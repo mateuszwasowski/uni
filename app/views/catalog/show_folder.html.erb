@@ -7,16 +7,31 @@
       <%= render 'nav' %>
       <div class="row" id="content">
         <div class="col-lg-12 text-center">
+
+            <%= link_to speciality_path() do%>
+          <div class="col-lg-2 box-file">
+            <div class="file">
+              <div class="row folder-icon">
+                <i class="fa fa-chevron-left fa-5x folder-ico"></i>
+              </div>
+
+              <div class="row folder-name">
+                BACK
+              </div>
+
+            </div>
+          </div>
+            <% end %>
           <% @year.fileshares.each do |cat| %>
 
             <%= link_to '#' do%>
             <div class="col-lg-2 box-file">
               <div class="file">
                 <div class="row folder-icon">
-                  <i class="fa fa-folder-open fa-5x folder-ico"></i>
+                  <i class="fa fa-file fa-5x folder-ico"></i>
                 </div>
-                <div class="row folder-name">
-                  <%= link_to "#{cat.name}", cat.file.url %>
+                <div class="row folder-name" >
+                  <%= link_to "#{cat.name}", cat.file.url ,style:"text-decoration:none"%>
                 </div>
               </div>
             </div>

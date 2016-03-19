@@ -12,12 +12,12 @@ Rails.application.routes.draw do
   get 'university/:id', to: "catalog#university_show", as: :uni_show
 
   scope '/university/:id/' do
-    get 'speciality/:id', to: "catalog#speciality", as: :speciality
+    get 'speciality/:s_id', to: "catalog#speciality", as: :speciality
   end
 
-  scope '/university/:id/speciality/:id/' do
-    get 'show_folder/:id', to: "catalog#show_folder", as: :show_folder
-    match 'show_folder/:id' => "catalog#create_file", :via => :post
+  scope '/university/:id/speciality/:s_id/' do
+    get 'show_folder/:f_id', to: "catalog#show_folder", as: :show_folder
+    match 'show_folder/:f_id' => "catalog#create_file", :via => :post
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
