@@ -1,9 +1,9 @@
 @import "sidebar.scss";
 @import "style.scss";
-/*
+
 body {
  background: url(image_path("background.jpg")) no-repeat center center fixed;
-   background-color: #000000;
+   background-color: #4499ef !important;
    background-position: top;
 }
 .container{
@@ -11,24 +11,38 @@ body {
 }
 #logo{
    margin-top: 90px;
-   background-color: white;
 }
 #unipload{
    margin-top: 45px;
-   background-color: red;
-
 }
 #contentSignIn{
 	margin-top: 50px;
+  margin-left: -25px;
 }
 
-#test{
-	background-color: red;
+#contentSignIn {
+  position: relative;
+  vertical-align: top;
+  width: 508px !important;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border: 0;
+  border-bottom: 2px solid #db4334;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #db4334;
+  box-shadow: inset 0 -2px #db4334;
 }
 
-#contentSignIn{
-	width: 708px !important;
-	height: 100px;
+#contentSignIn:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 #sendButton{
@@ -38,4 +52,3 @@ body {
 	height: 50px;
 
 }
-*/
