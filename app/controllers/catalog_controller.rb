@@ -1,5 +1,5 @@
 class CatalogController < ApplicationController
-   #before_action :authenticate_user!
+   before_action :authenticate_user!
 
    def university_show
      @uni = University.find(params[:id])
