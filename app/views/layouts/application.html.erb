@@ -36,9 +36,6 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 </script>
-<% if current_user %>
-<%= image_tag User.first.avatar.thumb.url %>
-<% end %>
 
 <%= yield %>
 
