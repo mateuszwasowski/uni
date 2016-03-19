@@ -7,9 +7,258 @@
       <%= render 'nav' %>
       <div class="row" id="content">
         <div class="col-lg-12 text-center">
-            
+
+                <div class="col-lg-2 box-file">
+                    <div class="addFile">
+                        <i class="fa fa-chevron-left fa-5x"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="file ui-widget-content" id="folder">
+                        <div class="row folder-icon">
+                            <i class="fa fa-folder-open fa-5x folder-ico"></i>
+                        </div>
+                        <div class="row folder-name">
+                          MATEMATYKA DYSKRETNA
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file" id="availableFileDiv" >
+                    <div class="file  ui-widget-header" id="availableFile">
+                        <div class="row file-icon">
+                          <i class="fa fa-file-pdf-o fa-5x ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="ui-corner-all col-lg-6" id="downloadDiv">
+                              <button type="button" class="btn btn-default button-download ui-state-default ui-corner-all" id="download"></button>
+                          </div>
+                          <div class="ui-corner-all col-lg-6" id="infoDiv">
+                              <button type="button" class="btn btn-default button-info ui-state-default ui-corner-all" id="info" data-toggle="modal" data-target="#fileModal"></button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fileModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                          MAD_Wyklad_03.pdf
+                        </h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Author: Mariusz Pudziankowski</p>
+                        <p>Date: 15-02-2016</p>
+                        <p>Size: 15.5mb</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 box-file">
+                    <div class="file">
+                        <div class="row file-icon">
+                          <i class="fa fa-camera-retro fa-5x ico" class="ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-download"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-info"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-delete"/>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="file">
+                        <div class="row file-icon">
+                            <i class="fa fa-file-image-o fa-5x ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-download"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-info"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-delete"/>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="file">
+                        <div class="row file-icon">
+                            <i class="fa fa-file-image-o fa-5x ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-download"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-info"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-delete"/>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="file">
+                        <div class="row file-icon">
+                            <i class="fa fa-file-image-o fa-5x ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-download"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-info"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-delete"/>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="file">
+                        <div class="row file-icon">
+                            <i class="fa fa-file-text-o fa-5x ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-download"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-info"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-delete"/>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="file">
+                        <div class="row file-icon">
+                          <i class="fa fa-file-pdf-o fa-5x ico"></i>
+                        </div>
+                        <div class="row file-name">
+                          MAD_Wyklad_03.pdf
+                        </div>
+                        <div class="row file-options">
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-download"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-info"/>
+                          </div>
+                          <div class="col-lg-4">
+                              <button type="button" class="btn btn-default button-delete"/>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 box-file">
+                    <div class="addFile">
+                        <i class="fa fa-plus fa-5x"></i>
+                    </div>
+                </div>
+
+
+
+
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+$(function() {
+     var $folder = $( "#folder" ),
+         $availableFile = $("#availableFile"),
+         $inaccessibleFile = $("#inaccessibleFile"),
+         $availableFileDiv = $("#availableFileDiv");
+   $availableFile.draggable({
+     cancel: false,
+     revert: "invalid",
+     containment: "document",
+     cursor: "move",
+   });
+   $inaccessibleFile.draggable({
+      cancel: false,
+      revert: "invalid",
+   });
+   $folder.droppable({
+     accept: $availableFile,
+     drop: function( event, ui ) {
+         $availableFile.hide( "drop", { direction: "up" }, "slow" );
+         $availableFileDiv.remove();
+       //AJAX
+     }
+   });
+   $( "#download" ).mouseenter(function() {
+
+     $("#infoDiv").hide();
+     $("#download").css('width: 100%');
+     $( "#download" ).button({label: "Download"});
+     $( "#downloadDiv" ).removeClass( "col-lg-6" );
+     $( "#downloadDiv" ).addClass( "col-lg-12");
+
+   });
+
+   $( "#download" ).mouseleave(function() {
+     $( "#download" ).button({label: ""});
+     $( "#downloadDiv" ).removeClass( "col-lg-12" );
+     $("#infoDiv").show();
+     $( "#downloadDiv" ).addClass( "col-lg-6" );
+   });
+
+   $( "#info" ).mouseenter(function() {
+     $("#downloadDiv").hide();
+     $( "#infoDiv" ).removeClass( "col-lg-6" );
+     $( "#infoDiv" ).addClass( "col-lg-12");
+     $("#info").css('width: 10%');
+     $( "#info" ).button({label: "Info"});
+
+   });
+
+ $("#menu-toggle").click(function(e) {
+     e.preventDefault();
+     $("#wrapper").toggleClass("toggled");
+ });
+   $( "#info" ).mouseleave(function() {
+     $( "#info" ).button({label: ""});
+     $( "#infoDiv" ).removeClass( "col-lg-12" );
+     $("#downloadDiv").show();
+     $( "#infoDiv" ).addClass( "col-lg-6" );
+   });
+ });
+</script>
