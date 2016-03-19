@@ -1,21 +1,20 @@
-#Paweł
-#development:
-#  adapter: postgresql
-#  database: uni_production
-#  pool: 5
-#  timeout: 5000
-#  username: pawelgraczyk
-#  password:
-#  host: localhost
-
 development:
   adapter: postgresql
   database: uni_production
   pool: 5
   timeout: 5000
-  username: uni
-  password: uni#db
+  username: pawelgraczyk
+  password:
   host: localhost
+
+#development:
+#  adapter: postgresql
+#  database: uni_production
+#  pool: 5
+#  timeout: 5000
+#  username: uni
+#  password: uni#db
+#  host: localhost
 
 test: &test
   adapter: postgresql
