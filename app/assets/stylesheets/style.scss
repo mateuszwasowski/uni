@@ -11,7 +11,10 @@ body{
 
 #top-bar .avatar{
 	width: 50px;
-	position: absolute;
+}
+
+.avatar {
+	border: 1px solid #e5e5e5;
 }
 
 #top-bar .topMargin{
@@ -23,83 +26,96 @@ body{
 }
 
 #content{
-	padding: 30px;
+    padding: 30px;
 }
 
 #content .box-specialization{
-	padding: 10px;
+    padding: 10px;
 }
 
 #content .button-specialization{
-	width: 200px;
-	height: 200px;
-	white-space: normal;
-	font-size: 20px;
+    width: 200px;
+    height: 200px;
+    white-space: normal;
+    font-size: 20px;
 }
 
 #content .box-file{
-	padding: 10px;
-	min-height: 170px;
+    padding: 10px;
+    min-height: 170px;
 }
 
 #content .file{
-	background-color: #ddd;
-	height: 170px;
+    background-color: #FFFFFF;
+    height: 170px;
 }
 
 #content .file-icon{
-	text-align: center;
+    text-align: center;
 }
 
 #content .file-name{
-	height: 40px;
-	font-size: 17px;
-	padding: 10px;
+    height: 40px;
+    font-size: 17px;
+    padding: 10px;
 }
 
 #content .file-options{
-	height: 30px;
-	padding: 4px;
-	padding-top: 0px;
+    height: 30px;
+    padding: 4px;
+    padding-top: 0px;
+		background-color: red;
 }
 
 #content .ico{
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 #content .button-download{
-	background-color: #0FC002;
-	height: 21px;
-	border-radius: 0 !important;
+    background-color: #0FC002;
+    height: 21px;
+    border-radius: 0 !important;
+    width: 100%;
 }
 
 #content .button-info{
-	background-color: #B1B6EA;
-	height: 21px;
-	border-radius: 0 !important;
+    background-color: #B1B6EA;
+    height: 21px;
+    border-radius: 0 !important;
+    width: 100%;
 }
 
 #content .button-delete{
-	background-color: #DE0C0C;
-	height: 21px;
-	border-radius: 0 !important;
+    background-color: #DE0C0C;
+    height: 21px;
+    border-radius: 0 !important;
+    width: 100%;
 }
 
 #content .folder-icon{
-	height: 110px;
-	text-align: center;
+    height: 110px;
+    text-align: center;
 }
 
 #content .folder-name{
-	height: 60px;
-	font-size: 14px;
-	word-wrap: break-word;
-	padding: 20px;
-	padding-top: 0px;
-/*	background-color: red;*/
+    height: 60px;
+    font-size: 14px;
+    word-wrap: break-word;
+    padding: 20px;
+    padding-top: 0px;
+/*  background-color: red;*/
 }
 
 #content .folder-ico{
-	font-size: 120px;
-	margin-left: 5px;
+    font-size: 120px;
+    margin-left: 5px;
+}
+
+#content .addFile{
+    background-color:#228A0E;
+    height: 170px;
+    padding-top: 50px;
+}
+*{
+    border-radius: 0 !important;
 }
