@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>Uni</title>
-  <% if notice %>
-  <p class="notice"><%= notice %></p>
-  <%end %>
-  <% if alert %>
-  <p class="alert"><%= alert %></p>
+  <% flash.each do |name, msg| %>
+    <% if msg == "" %>
+    <% else %>
+      <div class="alert alert-success">
+        <%= content_tag :div, msg, class: name %>
+      </div>
+    <% end %>
   <% end %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -36,6 +38,31 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 </script>
+
+<script type="text/javascript">
+window.setTimeout(function()
+ {
+$(".alert").fadeTo(500, 0).slideUp(500, function()
+{
+$(this).remove();
+});
+}, 4000);
+window.setTimeout(function()
+ {
+$(".alert-success").fadeTo(500, 0).slideUp(500, function()
+{
+$(this).remove();
+});
+}, 4000);
+window.setTimeout(function()
+ {
+$(".alert-danger").fadeTo(500, 0).slideUp(500, function()
+{
+$(this).remove();
+});
+}, 4000);
+</script>
+
 
 <%= yield %>
 
