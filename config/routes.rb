@@ -15,6 +15,9 @@ Rails.application.routes.draw do
     get 'speciality/:id', to: "catalog#speciality", as: :speciality
   end
 
+  scope '/university/:id/speciality/:id' do
+    get 'year/:id', to: "catalog#year", as: :year
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

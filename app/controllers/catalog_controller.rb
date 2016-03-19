@@ -6,7 +6,7 @@ class CatalogController < ApplicationController
    end
 
    def speciality
-
+     @special = Catalog.find(params[:id])
    end
 
    def catalog_show
