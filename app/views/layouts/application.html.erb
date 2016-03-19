@@ -37,8 +37,6 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 </script>
 <% if current_user %>
-<%= debug User.first.email %>
-<%= debug User.first.name %>
 <%= image_tag User.first.avatar.thumb.url %>
 <% end %>
 
