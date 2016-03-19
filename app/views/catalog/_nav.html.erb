@@ -6,11 +6,11 @@
   </div>
 
   <%if current_user %>
-  <div class="col-lg-3 col-lg-offset-4 topMargin">
+  <div class="col-lg-2 col-lg-offset-7 topMargin">
     <%= current_user.name %>
   </div>
   <div class="col-lg-1">
-    <%= image_tag User.first.avatar.url ,class:'avatar', alt: 'avatar'%>
+    <%= image_tag 'avatar.png', size:50%>
   </div>
   <% end %>
 </div>
