@@ -9,7 +9,7 @@ class CatalogController < ApplicationController
      @special = Catalog.find(params[:id])
    end
 
-   def catalog_show
-
+   def show_folder
+     @year = Catalog.find(params[:id])
    end
 end
