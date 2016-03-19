@@ -1,6 +1,6 @@
 body {
- background: url(../images/background.jpg) no-repeat center center fixed;
-   background-color: #000000; 
+ background: url(image_path("background.jpg")) no-repeat center center fixed;
+   background-color: #000000;
    background-position: top;
 }
 .container{
