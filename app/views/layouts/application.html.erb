@@ -36,11 +36,10 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 </script>
-<% if current_user %>
-<%= debug current_user.email %>
-<%= debug current_user.name %>
-<%= image_tag current_user.avatar.thumb.url %>
-<% end %>
+
+<%= debug User.first.email %>
+<%= debug User.first.name %>
+<%= image_tag User.first.avatar.thumb.url %>
 
 <%= yield %>
 
