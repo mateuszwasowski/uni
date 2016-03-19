@@ -1,5 +1,5 @@
 # Change these
-server '164.132.199.135', port: 80, roles: [:web, :app, :db], primary: true
+server '164.132.199.135', port: 9777, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:mateuszwasowski/uni.git'
 set :application,     'uni'
@@ -9,7 +9,7 @@ set :puma_workers,    0
 
 # Don't change these unless you know what you're doing
 set :pty,             true
-set :use_sudo,        true
+set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
