@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160319105106) do
+ActiveRecord::Schema.define(version: 20160319130001) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,15 @@ ActiveRecord::Schema.define(version: 20160319105106) do
     t.datetime "updated_at",                    null: false
     t.string   "catalog_id"
     t.boolean  "special",       default: false
+  end
+
+  create_table "fileshares", force: :cascade do |t|
+    t.string   "file"
+    t.string   "description"
+    t.string   "user_id"
+    t.string   "catalog_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "identities", force: :cascade do |t|

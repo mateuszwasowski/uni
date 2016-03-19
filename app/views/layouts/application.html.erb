@@ -5,7 +5,7 @@
   <% flash.each do |name, msg| %>
     <% if msg == "" %>
     <% else %>
-      <div class="alert alert-success">
+      <div class="alert alert-success" style="padding-bottom:0">
         <%= content_tag :div, msg, class: name %>
       </div>
     <% end %>

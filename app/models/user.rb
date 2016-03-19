@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
   has_and_belongs_to_many :universities
   has_many :catalogs
+  has_many :fileshares
 
   def self.from_omniauth(auth)
   where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

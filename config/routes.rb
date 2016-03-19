@@ -17,8 +17,8 @@ Rails.application.routes.draw do
 
   scope '/university/:id/speciality/:id/' do
     get 'show_folder/:id', to: "catalog#show_folder", as: :show_folder
+    match 'show_folder/:id' => "catalog#create_file", :via => :post
   end
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
