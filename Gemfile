@@ -6,6 +6,7 @@ gem 'pry-rails', :group => :development
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'carrierwave'
 
 group :development do
     gem 'capistrano',         require: false
