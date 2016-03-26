@@ -1,6 +1,8 @@
 <div id="sidebar-wrapper">
   <ul class="sidebar-nav">
-    <a class="sidebar-brand" href="#"><%= image_tag('logo_sidebar.png',id:"logo_sidebar", alt: 'vote')%></a>
+    <%= link_to home_path do%>
+      <%= image_tag('logo_sidebar.png',id:"logo_sidebar", alt: 'unipload logo sidebar')%>
+    <%end %>
     <li>
       <%= link_to  about_path do %>
         <span class="fa fa-info" style="font-size:14px; margin-right:10px;"></span>

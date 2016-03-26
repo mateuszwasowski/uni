@@ -1,151 +1,119 @@
-body{
-	font-family: 'Lato', sans-serif;
+#top-bar {
+  background-color: #fff;
+  padding: 3px;
+  color: #000;
+  font-size: 18px;
 }
-
-#top-bar{
-	background-color: #fff;
-	padding: 3px;
-	color: #000;
-	font-size: 18px;
+#top-bar .avatar {
+  width: 50px;
 }
-
-#top-bar .avatar{
-	width: 50px;
-}
-
 .avatar {
-	border: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
-
-#top-bar .topMargin{
-	margin-top: 15px;
+#top-bar .topMargin {
+  margin-top: 15px;
 }
-
-
-
-.main-content{
-	background-color: #fff;
+.main-content {
+  background-color: #fff;
 }
-
-#content{
-    padding: 30px;
+#content {
+  padding: 30px;
 }
-
-#content .box-specialization{
-    padding: 10px;
+#content .box-specialization {
+  padding: 10px;
 }
-
-#content .button-specialization{
-    width: 200px;
-    height: 200px;
-    white-space: normal;
-    font-size: 20px;
+#content .button-specialization {
+  width: 200px;
+  height: 200px;
+  white-space: normal;
+  font-size: 20px;
 }
-
-#content .box-file{
-    padding: 10px;
-    min-height: 150px;
-
+#content .box-file {
+  padding: 10px;
+  min-height: 150px;
 }
-
-#content .box-file:hover{
-	cursor: pointer;
-	border: 1px solid #e5e5e5;
-
+#content .box-file:hover {
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
 }
-
-#content .file{
-    background-color: #FFFFFF;
-    height: 150px;
+#content .file {
+  background-color: #fff;
+  height: 150px;
 }
-
-#content .file:hover{
-	border-bottom: 6px solid #e5e5e5;
+#content .file:hover {
+  border-bottom: 6px solid #e5e5e5;
 }
-
-
-#content .file-icon{
-    text-align: center;
+#content .file-icon {
+  text-align: center;
 }
-
-#content .file-name{
-    height: 40px;
-    font-size: 17px;
-    padding: 10px;
+#content .file-name {
+  height: 40px;
+  font-size: 17px;
+  padding: 10px;
 }
-
-#content .file-options{
-    height: 30px;
-    padding: 4px;
-    padding-top: 0px;
-		background-color: red;
+#content .file-options {
+  height: 30px;
+  padding: 4px;
+  padding-top: 0;
+  background-color: red;
 }
-
-#content .ico{
-    padding-top: 20px;
+#content .ico {
+  padding-top: 20px;
 }
-
-#content .button-download{
-    background-color: #0FC002;
-    height: 21px;
-    border-radius: 0 !important;
-    width: 100%;
+#content .button-download {
+  background-color: #0fc002;
+  height: 21px;
+  border-radius: 0 !important;
+  width: 100%;
 }
-
-#content .button-info{
-    background-color: #B1B6EA;
-    height: 21px;
-    border-radius: 0 !important;
-    width: 100%;
+#content .button-info {
+  background-color: #b1b6ea;
+  height: 21px;
+  border-radius: 0 !important;
+  width: 100%;
 }
-
-#content .button-delete{
-    background-color: #DE0C0C;
-    height: 21px;
-    border-radius: 0 !important;
-    width: 100%;
+#content .button-delete {
+  background-color: #de0c0c;
+  height: 21px;
+  border-radius: 0 !important;
+  width: 100%;
 }
 
 //ikony content
-div.row.folder-icon{
-		color: #66b8f5;
-		text-shadow: 0px 1px #fff;
+div.row.folder-icon {
+  color: #66b8f5;
+  text-shadow: 0 1px #fff;
 }
-
-div.row.folder-name{
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 12px;
-	color: #555;
-	text-shadow: 0px 1px #fff;
+div.row.folder-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #555;
+  text-shadow: 0 1px #fff;
 }
-
-#content .folder-ico{
-	font-size: 54px;
-	margin-top: 24px;
-	margin-left: 5px;
+#content .folder-ico {
+  font-size: 54px;
+  margin-top: 24px;
+  margin-left: 5px;
 }
-
-#content .folder-icon{
-    height: 110px;
-		margin: 0 auto;
-    text-align: center;
+#content .folder-icon {
+  height: 110px;
+  margin: 0 auto;
+  text-align: center;
 }
-
-#content .folder-name{
-    height: 60px;
-    font-size: 14px;
-    word-wrap: break-word;
-    padding: 20px;
-    padding-top: 0px;
-/*  background-color: red;*/
+#content .folder-name {
+  height: 60px;
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 20px;
+  padding-top: 0;
+  /*  background-color: red;*/
 }
-
-#content .addFile{
-    background-color:#228A0E;
-    height: 170px;
-    padding-top: 50px;
+#content .addFile {
+  background-color: #228a0e;
+  height: 170px;
+  padding-top: 50px;
 }
-*{
-    border-radius: 0 !important;
+* {
+  border-radius: 0 !important;
 }

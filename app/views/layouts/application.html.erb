@@ -1,76 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Unipload</title>
+  <head>
+    <title>Unipload</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <%= csrf_meta_tags %>
+  </head>
   <% flash.each do |name, msg| %>
-    <% if msg == "" %>
-    <% else %>
+    <% unless msg == "" %>
       <div class="alert alert-success" style="padding-bottom:0">
         <%= content_tag :div, msg, class: name %>
       </div>
     <% end %>
   <% end %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <%= csrf_meta_tags %>
-</head>
-<% if current_page?(root_path) %>
-<body style="background-color: #4499ef !important;background: url(<%=image_path("background.jpg")=%>) no-repeat center center fixed;">
-<% else %>
-<body>
-<% end %>
-<script>
-window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '239282999749784',
-    xfbml      : true,
-    version    : 'v2.5'
-  });
-};
+  <% if current_page?(root_path) %>
+  <body style="background-color: #4499ef;">
+    <% else %>
+    <body>
+      <% end %>
 
-(function(d, s, id){
-   var js, fjs = d.getElementsByTagName(s)[0];
-   if (d.getElementById(id)) {return;}
-   js = d.createElement(s); js.id = id;
-   js.src = "//connect.facebook.net/en_US/sdk.js";
-   fjs.parentNode.insertBefore(js, fjs);
- }(document, 'script', 'facebook-jssdk'));
-</script>
+      <%= yield %>
 
-<script type="text/javascript">
-window.setTimeout(function()
- {
-$(".alert").fadeTo(500, 0).slideUp(500, function()
-{
-$(this).remove();
-});
-}, 4000);
-window.setTimeout(function()
- {
-$(".alert-success").fadeTo(500, 0).slideUp(500, function()
-{
-$(this).remove();
-});
-}, 4000);
-window.setTimeout(function()
- {
-$(".alert-danger").fadeTo(500, 0).slideUp(500, function()
-{
-$(this).remove();
-});
-}, 4000);
-</script>
-<script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
-</script>
-
-
-<%= yield %>
-
-</body>
-</html>
+    </body>
+  </html>

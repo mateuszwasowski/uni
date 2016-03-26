@@ -1,40 +1,39 @@
 @import "sidebar.scss";
 @import "style.scss";
-
 body {
-  background-position: top;
+  font-family: 'Lato', sans-serif;
 }
-.container{
-	margin-top: 170px;
+.container {
+  margin-top: 170px;
 }
-#logo{
-   margin-top: 90px;
+#logo {
+  margin-top: 90px;
 }
-#unipload{
-   margin-top: 45px;
+#unipload {
+  margin-top: 45px;
 }
-#contentSignIn{
-	margin-top: 50px;
+#contentSignIn {
+  margin-top: 50px;
   margin-left: -25px;
 }
-
-#test img{
+#test img {
   padding-left: 15px;
 }
-
-a.btn-facebook{
+a.btn-facebook {
   text-decoration: none;
-  color:white;
-  margin-top:50px;
-  padding-top:10px;
-  padding-bottom:10px;
+  color: white;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: bold;
 }
-a#menu-toggle{
+a#menu-toggle {
   background: white !important;
-
 }
-.btn-facebook span.fa{
+a.btn-facebook.btn:focus {
+  color: white;
+}
+.btn-facebook span.fa {
   line-height: 40px;
 }
 #contentSignIn {
@@ -54,18 +53,24 @@ a#menu-toggle{
   -webkit-box-shadow: inset 0 -2px #db4334;
   box-shadow: inset 0 -2px #db4334;
 }
-
 #contentSignIn:active {
   top: 1px;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
-#sendButton{
-	margin-top: 100px;
-	margin-bottom: 100px;
-	width: 408px !important;
-	height: 50px;
-
+#sendButton {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 408px !important;
+  height: 50px;
+}
+#text_about {
+  color: #555;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
