@@ -1,4 +1,4 @@
-sRails.application.routes.draw do
+Rails.application.routes.draw do
 
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 
@@ -10,5 +10,5 @@ sRails.application.routes.draw do
   get '/', to: "home#home", as: :home
 
   get '/about', to: "home#about", as: :about
-  
+
 end
