@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root to: 'home#index'
-  get '/', to: "home#index", as: :index
   get '/', to: "home#home", as: :home
 
   get '/about', to: "home#about", as: :about
