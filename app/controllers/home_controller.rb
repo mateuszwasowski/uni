@@ -5,7 +5,7 @@ class HomeController < ApplicationController
     if current_user
       @uni = current_user.universities
     else
-      @uni = University.all
+      redirect_to root_path
     end
   end
 

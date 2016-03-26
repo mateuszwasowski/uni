@@ -9,19 +9,36 @@
     <%= csrf_meta_tags %>
   </head>
   <% flash.each do |name, msg| %>
-    <% unless msg == "" %>
-      <div class="alert alert-success" style="padding-bottom:0">
-        <%= content_tag :div, msg, class: name %>
-      </div>
-    <% end %>
+  <% unless msg == "" %>
+  <div class="alert alert-success" style="padding-bottom:0">
+    <%= content_tag :div, msg, class: name %>
+  </div>
+  <% end %>
   <% end %>
   <% if current_page?(root_path) %>
-  <body style="background-color: #4499ef;">
-    <% else %>
+    <body style="background-color: #4499ef;">
+  <% else %>
     <body>
-      <% end %>
+  <% end %>
 
-      <%= yield %>
 
-    </body>
-  </html>
+    <%= yield %>
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '239282999749784',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </body>
+</html>

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
   get '/', to: "home#index", as: :index
-  get 'home', to: "home#home", as: :home
+  get '/', to: "home#home", as: :home
 
   get 'university/:id', to: "catalog#university_show", as: :uni_show
 
