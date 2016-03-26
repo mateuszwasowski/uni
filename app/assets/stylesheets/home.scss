@@ -4,28 +4,58 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .container {
-  margin-top: 170px;
+  margin-top: 100px;
 }
+#form-wrapper{
+  margin-top: 10px;
+padding:10px;
+border-radius: 5px 5px 0 0;
+display: none;
+background: white;
+color:#4499ef;
+}
+#form-wrapper.toggled{
+border-bottom:1px solid #4499ef;
+}
+#formSignIn{
+  text-decoration: none !important;
+}
+div#signInButton{
+  padding:10px;
+  color:#4499ef;
+  border-radius:5px;
+  font-weight: bold;
+  background-color:white;
+  border-color:rgba(0,0,0,0.2);
+}
+div#signInButton.toggled{
+  border-radius:0 0 5px 5px;
+}
+#main a:hover{
+text-decoration: none;
+}
+#signInButton:hover{
+background-color:white;
+}
+
 #logo {
   margin-top: 90px;
 }
 #unipload {
   margin-top: 45px;
 }
-#contentSignIn {
-  margin-top: 50px;
-  margin-left: -25px;
-}
-#test img {
-  padding-left: 15px;
+
+#logo {
+margin-bottom:20px
 }
 a.btn-facebook {
   text-decoration: none;
   color: white;
-  margin-top: 50px;
+  margin-top:5px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 a#menu-toggle {
   background: white !important;
@@ -36,29 +66,8 @@ a.btn-facebook.btn:focus {
 .btn-facebook span.fa {
   line-height: 40px;
 }
-#contentSignIn {
-  position: relative;
-  vertical-align: top;
-  width: 508px !important;
-  height: 60px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #e74c3c;
-  border: 0;
-  border-bottom: 2px solid #db4334;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #db4334;
-  box-shadow: inset 0 -2px #db4334;
-}
-#contentSignIn:active {
-  top: 1px;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
+
+
 #sendButton {
   margin-top: 100px;
   margin-bottom: 100px;

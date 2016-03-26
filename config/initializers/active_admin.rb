@@ -6,7 +6,6 @@ ActiveAdmin.setup do |config|
   #
   config.site_title = "Unipload"
 
-  config.site_title_link  = "/matrix"
   config.site_title_image = "logo_sidebar.png"
 
 
@@ -37,7 +36,7 @@ ActiveAdmin.setup do |config|
   #   config.default_namespace = false
   #
   # Default:
-  # config.default_namespace = :admin
+   config.default_namespace = :matrix
   #
   # You can customize the settings for each namespace by using
   # a namespace block. For example, to change the site title
