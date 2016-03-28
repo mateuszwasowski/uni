@@ -1,0 +1,10 @@
+#top-bar.row
+  .col-lg-1.topMargin
+    %a#menu-toggle.btn.btn-default{:href => "#menu-toggle"}
+      %i.fa.fa-bars.fa-2x
+  - if current_user
+    %div{:style => "margin-top:10px;"}
+      .col-lg-2.col-lg-offset-8.topMargin{:style => "text-align:right"}
+        = current_user.name
+      .col-lg-1
+        = image_tag 'avatar.png', width:50, height:50

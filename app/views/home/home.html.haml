@@ -1,0 +1,17 @@
+#wrapper
+  / Sidebar
+  = render 'sidebar'
+  / Page Content
+  #page-content-wrapper.main-content
+    #container.container-fluid
+      = render 'nav'
+      #content.row
+        .col-lg-12.text-center
+          - @uni.each do |uni|
+            = link_to uni_show_path(uni.id) ,style:"border:0;" do
+              .col-lg-2.box-file
+                .file
+                  .row.folder-icon
+                    %i.fa.fa-book.folder-ico
+                  .row.folder-name
+                    = uni.name

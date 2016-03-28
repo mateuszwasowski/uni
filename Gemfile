@@ -1,27 +1,33 @@
 source 'https://rubygems.org'
 
-
-#addded gems
-gem 'pry-rails', :group => :development
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'angularjs-rails'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'sqlite3'
+  gem 'byebug'
+
+  # Access an IRB console on exception pages or by using <%= console %> in views
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
 
 group :development do
+    gem 'pry-rails'
     gem 'capistrano',         require: false
     gem 'capistrano-rvm',     require: false
     gem 'capistrano-rails',   require: false
     gem 'capistrano-bundler', require: false
     gem 'capistrano3-puma',   require: false
+    gem 'web-console', '~> 2.0'
 end
 
-
+gem "haml-rails", "~> 0.9"
 gem 'puma'
-
-group :development, :test do
-  gem 'sqlite3'
-end
 
 group :production do
   gem 'pg'
@@ -56,14 +62,3 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-end
