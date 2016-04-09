@@ -28,6 +28,11 @@ div#signInButton{
   background-color:white;
   border-color:rgba(0,0,0,0.2);
 }
+div#closeSignIn{
+  text-align:right;
+  margin-bottom:-22px;
+  font-size:20px
+}
 div#signInButton.toggled{
   border-radius:0 0 5px 5px;
 }
@@ -38,9 +43,6 @@ text-decoration: none;
 background-color:white;
 }
 
-#logo {
-  margin-top: 90px;
-}
 #unipload {
   margin-top: 45px;
 }

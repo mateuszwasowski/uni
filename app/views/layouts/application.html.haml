@@ -8,9 +8,10 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = csrf_meta_tags
-  %body
     - if current_page?(root_path)
+      %body{:style => "background-color: rgb(68, 153, 239) !important;"}
     - else
+      %body
     - [:notice, :error, :alert].each do |level|
       - unless flash[level].blank?
         %div{:class => "alert #{flash_class(level)}"}
