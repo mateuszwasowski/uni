@@ -4,7 +4,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .container {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 #form-wrapper{
   margin-top: 10px;
@@ -17,7 +17,7 @@ color:#4499ef;
 #form-wrapper.toggled{
 border-bottom:1px solid #4499ef;
 }
-#formSignIn{
+#formSignIn, #formRegister{
   text-decoration: none !important;
 }
 div#signInButton{
@@ -28,6 +28,16 @@ div#signInButton{
   background-color:white;
   border-color:rgba(0,0,0,0.2);
 }
+div#registerButton{
+  padding:10px;
+  color:#4499ef;
+  border-radius:5px;
+  font-weight: bold;
+  background-color:white;
+  border-color:rgba(0,0,0,0.2);
+  margin:20px;
+}
+
 div#closeSignIn{
   text-align:right;
   margin-bottom:-22px;
@@ -40,6 +50,9 @@ div#signInButton.toggled{
 text-decoration: none;
 }
 #signInButton:hover{
+background-color:white;
+}
+#registerButton:hover{
 background-color:white;
 }
 
